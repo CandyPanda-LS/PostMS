@@ -1,0 +1,11 @@
+services:
+  posts:
+    image: "lasalhettiarachchi/postms:1.0.0"
+    container_name: posts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      replicas: 1
+      resources:
+          limits:
+            memory: 700M
